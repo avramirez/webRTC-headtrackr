@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEB RTC Experiment</title>
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+
+<h3>
+	WEB RTC EXPERIMENT
+</h3>
+<a href="index.html">Basic</a> <br />
+<a href="index.html">Motion Detection (Basic Explanation)</a> <br />
+<a href="index.html">Face tracking using headtrackr.js</a> <br />
+<p>Motion Detection</p>
+<div>
+	<div id="videoContainer" style="float:left; position:relative;">
+		<video autoplay></video>
+		<img id="mask1" src="assets/images/mask1.png" style="position:absolute;top:10px;left:80px;width:50px;height:50px;" />
+		
+		<br style="clear:both;" />
+	</div>
+	<div style="float:right;">
+		<img id="captured" src="" width="640" height="360">
+		<br style="clear:both;" />
+	</div>
+<br style="clear:both;" />
+</div>
+<br />
+<h4>Canvas source</h4>
+<p>
+  Used for <a href="http://en.wikipedia.org/wiki/Blend_modes#Difference">blend mode difference</a>
+</p>
+<br />
+<canvas id="canvas-source" width="640" height="360" style="position:relative;"></canvas>
+<br />
+<h4>Blended Canvas</h4>
+<p>
+  The blended that returns white on the difference instead of the color differential. 
+</p>
+<canvas id="canvas-blended" style="background:#000000;" width="640" height="360"></canvas>
+
+<br />
+
+
+<footer>
+	<small>Andrew James V. Ramirez</small>
+</footer>
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/motionDetect.js"></script>
+</body>
+
+</html>
