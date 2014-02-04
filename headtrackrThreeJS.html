@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEB RTC Experiment</title>
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+
+<h3>
+	WEB RTC EXPERIMENT
+</h3>
+<a href="index.html">Basic</a> <br />
+<a href="motionDetect.html">Motion Detection (Basic Explanation)</a> <br />
+<a href="headtrackrThreeJS.html">Face tracking using headtrackr.js and Three.js</a> <br />
+
+X CANVAS HEAD: <input type="text" id="xhead">
+Y CANVAS HEAD: <input type="text" id="yhead">
+<br/>
+
+Z HEAD: <input type="text" id="xhead">
+
+<br/>
+
+H HEAD: <input type="text" id="hhead">
+W HEAD: <input type="text" id="whead">
+
+ANGLE HEAD: <input type="text" id="anglehead">
+
+<canvas id="inputCanvas" width="320" height="240" style="display:none;"></canvas>
+<div style="position:relative;">
+	<div id="pointCenter" style="position:absolute;width:10px;height:10px;background:#000000;"></div>
+	<img id="mask1" src="assets/images/mask1.png" style="position:absolute;z-index=10;" />
+	<canvas id="overlay" width="320" height="240" style="position: absolute; top: 0px; z-index: 100001; display: block;"></canvas>
+<video id="inputVideo" autoplay loop></video>
+</div>
+<footer>
+	<small>Andrew James V. Ramirez</small>
+</footer>
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/headtrackr.js"></script>
+<script type="text/javascript" src="assets/js/headtrackrthreejs.js"></script>
+</body>
+
+</html>
