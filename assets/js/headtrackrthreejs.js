@@ -2,7 +2,7 @@ $(document).ready(function(){
 	var videoInput = document.getElementById('inputVideo');
   	var canvasInput = document.getElementById('inputCanvas');
 
-  	var htracker = new headtrackr.Tracker({calcAngles : true});
+  	var htracker = new headtrackr.Tracker({calcAngles : true,detection:"VJ"});
   	htracker.init(videoInput, canvasInput);
   	htracker.start();
 
